@@ -61,6 +61,18 @@ p {
 .project-description {
 	margin: 150px 70px;
 }
+.about-section {
+	margin-top: 100px;
+}
+.about-section h1 {
+	font-size: 64px;
+}
+.about-section h2 {
+	font-size: 18px;
+}
+.profile-picture {
+	border-radius: 25px;
+}
 
 @media (max-width: 900px) {
 	h1 {
