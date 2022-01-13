@@ -1,7 +1,7 @@
 :root {
 	--heading-font: "Playfair Display", serif;
 	--default-font: "Poppins", sans-serif;
-	--hero-background-color: #f9f7fe;
+	--background-color: #f9f7fe;
 	--branding-color: #6c63ff;
 	--secondary-font-color: #272142;
 }
@@ -13,6 +13,10 @@ h1 {
 h2 {
 	font-family: var(--heading-font);
 	font-size: 64px;
+}
+h4 {
+	font-size: 48px;
+	font-family: var(--heading-font);
 }
 p,
 li {
@@ -38,6 +42,7 @@ nav li {
 nav li a {
 	text-decoration: none;
 	color: #272142;
+	transition: all 150ms ease-in-out;
 }
 nav li .active {
 	color: var(--branding-color);
@@ -45,13 +50,12 @@ nav li .active {
 
 nav li a:hover {
 	color: var(--branding-color);
-	transition: all 150ms ease-in-out;
 }
 .hero {
 	text-align: center;
-	background-color: var(--hero-background-color);
+	background-color: var(--background-color);
 	font-family: var(--default-font);
-	padding: 170px 0 270px;
+	padding: 160px 0 230px;
 }
 
 .hero p {
@@ -73,7 +77,7 @@ nav li a:hover {
 	font-family: var(--default-font);
 	padding: 18px 30px;
 	border-radius: 5px;
-	margin-top: 50px;
+
 	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -129,6 +133,41 @@ nav li a:hover {
 .profile-picture {
 	border-radius: 40px;
 }
+footer .inquiry-box {
+	background-color: var(--background-color);
+	padding: 30px 120px;
+	border-radius: 15px;
+}
+footer .inquiry-box p {
+	font-size: 18px;
+	opacity: 0.75;
+}
+
+footer a.email-link {
+	font-size: 24px;
+	text-decoration: none;
+	color: black;
+	font-weight: 600;
+	margin-bottom: 30px;
+	transition: all 100ms ease-in-out;
+}
+footer .email-link:hover {
+	color: var(--branding-color);
+}
+footer .social-links {
+	color: var(--branding-color);
+	font-size: 18px;
+	background-color: var(--background-color);
+	padding: 10px 12px;
+	border-radius: 20px;
+	margin: 0 20px;
+	transition: all 100ms ease-in-out;
+	cursor: pointer;
+}
+footer .social-links:hover {
+	color: white;
+	background-color: var(--branding-color);
+}
 
 @media (max-width: 900px) {
 	h1 {
@@ -164,8 +203,9 @@ nav li a:hover {
 		line-height: 45px;
 	}
 	.project-description {
-		margin: 0 15px 75px;
+		margin: 25px 15px 10px;
 	}
+
 	.btn-project {
 		display: block;
 		margin: 0 70px;
