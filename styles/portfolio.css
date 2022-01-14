@@ -90,6 +90,9 @@ nav li a:hover {
 	padding: 18px 30px;
 	border-radius: 5px;
 }
+.transition-paragraph {
+	margin-bottom: 40px;
+}
 
 .project-description {
 	margin: 40px 70px 120px;
@@ -176,7 +179,7 @@ footer a {
 
 @media (max-width: 900px) {
 	h1 {
-		font-size: 70px;
+		font-size: 65px;
 		margin: 0 15px;
 		line-height: 1.5;
 		font-weight: bold;
@@ -197,15 +200,21 @@ footer a {
 		padding: 60px 0 80px;
 	}
 	.hero p {
-		font-size: 55px;
+		font-size: 40px;
 		line-height: 60px;
 	}
 
+	.hero h1 {
+		line-height: 85px;
+	}
 	.hero h2 {
 		font-size: 30px;
 		text-align: center;
 		margin: 0 50px;
 		line-height: 45px;
+	}
+	.transition-paragraph {
+		margin: 48px 30px 20px;
 	}
 	.project-description {
 		margin: 25px 15px 10px;
